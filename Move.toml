@@ -4,7 +4,7 @@ version = "1.0.0"
 authors = []
 
 [addresses]
-token_utils = "daf7e32fb5abef979b385cf1cac0dcd0fd266c3a415d2a883fa329a5edaa07f6"
+token_utils = "0xbe2751ae307276a5c5da906c5f3ea286c272f2917b9cb9937ad16478aaec4475" # mainnet
 
 [dependencies.AptosFramework]
 git = "https://github.com/movementlabsxyz/aptos-core.git"
