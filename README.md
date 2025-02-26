@@ -6,7 +6,7 @@ This repository contains utility smart contracts for working with token (Coin & 
 
 - **Mainnet**: 0xbe2751ae307276a5c5da906c5f3ea286c272f2917b9cb9937ad16478aaec4475
 - **Porto**: 0xdaf7e32fb5abef979b385cf1cac0dcd0fd266c3a415d2a883fa329a5edaa07f6
-- **Bardock**: 0x0d06755051b9d794265ae9fab2f6a2355fcc631bcf6d844874471ea34f8bda2b
+- **Bardock**: 0xbe2751ae307276a5c5da906c5f3ea286c272f2917b9cb9937ad16478aaec4475
 
 ## Prerequisites
 
