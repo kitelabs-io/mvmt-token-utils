@@ -23,7 +23,7 @@ module token_utils::token {
         coin_type: String,
         fa_address: String,
         /// The balance of the coin in the account.
-        /// If user has not migrated the coin to FA, this will be the balance of the coin only, 
+        /// If user has not migrated the coin to FA, this will be the balance of the coin only,
         /// not including the FA balance like coin::balance function.
         /// If user has migrated the coin to FA, coin_balance will be 0.
         coin_balance: u64,
@@ -58,6 +58,21 @@ module token_utils::token {
             T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16,
             T17, T18, T19, T20, T21, T22, T23, T24, T25, T26, T27, T28, T29, T30, T31, T32,
         >(account, &mut balances);
+
+        get_balance_of_fas(account, &fa_addresses, &mut balances);
+
+        return balances
+    }
+
+    #[view]
+    /// Get the balances of the given account for the given FAs.
+    ///
+    /// # Arguments
+    ///
+    /// - `account` - The account to get the balances for.
+    /// - `fa_addresses` - The addresses of the FAs to get the balances for. These FAs should not be paired with any coin.
+    public fun get_fa_balances(account: address, fa_addresses: vector<address>): vector<TokenBalance> {
+        let balances = vector<TokenBalance>[];
 
         get_balance_of_fas(account, &fa_addresses, &mut balances);
 
